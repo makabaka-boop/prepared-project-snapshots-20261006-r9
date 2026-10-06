@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>图纸窗口裁切复核</title>
+<h1>图纸坐标窗口裁切</h1><p>本地导入 DXF，裁切与视图缩放分别记录。</p><input id="file" type="file" accept=".dxf"><button id="sample">载入示例</button>
+<label>X 最小 <input id="xmin" type="number" value="-10"></label><label>X 最大 <input id="xmax" type="number" value="20"></label>
+<label>Y 最小 <input id="ymin" type="number" value="-10"></label><label>Y 最大 <input id="ymax" type="number" value="20"></label>
+<button id="clip">裁切复核</button><button id="download">下载片段证据</button><output id="status"></output>
+<svg id="view" width="600" height="400" style="border:1px solid"></svg><pre id="evidence"></pre>
+<script src="js/dxf-core.js"></script><script src="js/dxf-writer.js"></script><script src="js/sample.js"></script><script src="js/clip.js"></script><script src="js/clip-page.js"></script></html>
